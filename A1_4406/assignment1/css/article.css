@@ -1,0 +1,323 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+/* Initiazation */
+/***************************/
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+/* Helper */
+/* This class hides content of the element that is too big to fit in it's block. */
+/***************************/
+.overflow {
+  overflow: hidden;
+}
+/* Typography */
+/* Here are classes that specify how the header tags and the paragraphs are going to look like. */
+/***************************/
+#hero h1 {
+  overflow: hidden;
+  font-family: "Oswald", sans-serif;
+  font-size: 5vw;
+  letter-spacing: 0.54vw;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#hero h2 {
+  overflow: hidden;
+  font-family: "Fira Code", monospace;
+  font-size: 8vw;
+  letter-spacing: 1.85vw;
+  text-align: center;
+  color: var(--color-3);
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-top: 200px;
+}
+#hero h3 {
+  overflow: hidden;
+  padding: 2vw 0 0 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.17vw;
+  font-weight: 400;
+  letter-spacing: 0.54vw;
+  text-transform: uppercase;
+}
+#hero h4 {
+  font-size: 5vw;
+  padding-bottom: 3vw;
+  overflow: hidden;
+}
+#hero .paragraphs p,
+#hero .paragraphs ol {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2.4vw;
+  line-height: 3vw;
+  text-indent: 2.2vw;
+  list-style-position: inside;
+}
+#hero .paragraphs ol {
+  padding-left: 3%;
+  font-size: 2vw;
+}
+/* Section - Title */
+/* Move the title to desired position */
+/***************************/
+#hero .title {
+  background: white;
+  padding-top: 15vw;
+  text-align: center;
+}
+/* Section - Transition */
+/* Creates a section that has a background image that is scrollable, 
+and clips it with a polygon for visual effect */
+/***************************/
+#hero .background-transition {
+  padding-top: 20vw;
+  padding-bottom: 20vw;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  background-image: url(../resources/Hello_World.jpg);
+  text-shadow: -1px -1px 0 var(--color-1), 1px -1px 0 var(--color-1),
+    -1px 1px 0 var(--color-1), 1px 1px 0 var(--color-1);
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  clip-path: polygon(0% 40%, 100% 20%, 100% 100%, 0% 100%);
+}
+/* Section - Block */
+/* This fixes the size of the paragraphs and quote in the hero section. */
+/***************************/
+#hero .block {
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+  text-align: start;
+}
+.quote {
+  font-size: 2vw;
+  margin-left: 45%;
+  width: 40%;
+  height: auto;
+  background: #f2f2f2;
+  padding: 1em;
+  border-radius: 1em;
+}
+/* Group Aside-Education */
+/* Section that contains the Projects section and the aside,
+because we are doing a mobile first approach we make the two sections not to float
+and when their is enough space we arrange them horizontally.*/
+/***************************/
+.group-left {
+  float: none;
+}
+.group-right {
+  float: none;
+}
+/* Aside Section */
+/* Fixing the size of the aside section */
+/***************************/
+.custom-table {
+  font-size: 2vw;
+  margin: 5%;
+}
+/* Project Section */
+/* Customizing the fonts and spaces of the projects. */
+/***************************/
+.row {
+  margin: 0;
+}
+.list-group-item {
+  padding: 3%;
+}
+.project h4 {
+  padding-left: 5%;
+}
+.project h5 {
+  font-size: 2.5vw;
+  overflow: hidden;
+}
+.project p {
+  font-size: 2vw;
+}
+.project small {
+  font-size: 1.4vw;
+}
+.project dd,
+.project dt {
+  font-size: 2.5vw;
+}
+/* Minecraft project */
+/* This is the minecraft project where we arrange the video and the image horizontally
+and customize them. */
+.footage {
+  width: 100%;
+  margin-top: 5%;
+}
+.footage .left-float {
+  float: left;
+}
+.footage .right-float {
+  float: right;
+}
+.minecraft-link {
+  background-color: black;
+  width: 40px;
+  padding: 10px;
+  border-radius: 2em;
+}
+/* Left side */
+/* Left side that contains the image */
+figure {
+  width: 40%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thick silver solid;
+}
+/* Right side */
+/* Right side that contains the video
+I have added the brightness to fix a bug, when I would scroll up and down the 
+video would start to flicker. */
+.video-border video {
+  border: 9px outset #ddd;
+  border-radius: 10px;
+  filter: brightness(90%);
+}
+.video-border {
+  margin-right: 10%;
+}
+/* Custom Link */
+/* The link changes color based on what state it is. */
+/***************************/
+.minecraft-link {
+  display: inline-block;
+  padding: 0.5em 3em 0.5em 0.5em;
+  border: 0.16em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.15s;
+}
+.minecraft-link a:link {
+  color: var(--color-4);
+  background-color: transparent;
+  text-decoration: none;
+}
+.minecraft-link a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+.minecraft-link a:hover {
+  color: var(--color-3);
+  background-color: transparent;
+  text-decoration: none;
+}
+.minecraft-link a:active {
+  color: var(--color-2);
+  background-color: transparent;
+  text-decoration: none;
+}
+/* Tip Section */
+/* Fixed the sizing of the tip button */
+/***************************/
+#tip a {
+  margin: 1% 0 0 2%;
+  font-size: 2vw;
+}
+#tip div div {
+  padding: 5px;
+  margin: 0 0 10px 10px;
+  width: 26%;
+  font-size: 2vw;
+}
+/* Audio Clip */
+/* Making the audio tag change size based on the width of the screen. */
+/***************************/
+audio {
+  width: 50vw;
+}
+/* Media Querries */
+/* This with the help of vw (view width) is how I made the site responsive. */
+/***************************/
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  /* Nothing needed to be changed */
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  #hero .background-transition {
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+  }
+  #hero h2 {
+    font-size: 6vw;
+  }
+  footer {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* Grouping */
+  .group-left {
+    float: left;
+  }
+  .group-right {
+    float: right;
+    font-size: 1.3vw;
+  }
+  /* Education Section */
+  .paragraphs {
+    width: 50%;
+  }
+  #hero .paragraphs p,
+  #hero .paragraphs ol {
+    font-size: 1.5vw;
+    line-height: 1.8vw;
+  }
+  .quote {
+    font-size: 1vw;
+  }
+  #hero h4 {
+    padding-bottom: 10px;
+    font-size: 3vw;
+  }
+  /* Tip Section */
+  #tip a {
+    font-size: 1vw;
+  }
+  #tip div div {
+    font-size: 0.8vw;
+    width: 10%;
+    margin-left: 20px;
+  }
+  /* Project Section */
+  .project h4 {
+    padding-left: 15px;
+  }
+  .project h5 {
+    font-size: 1.3vw;
+    padding-bottom: 10px;
+  }
+  .project p {
+    font-size: 1vw;
+  }
+  .project small {
+    font-size: 0.7vw;
+  }
+  .project dd,
+  .project dt {
+    font-size: 1.5vw;
+  }
+}

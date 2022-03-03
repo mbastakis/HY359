@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Load JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Load Charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    <!-- Load my CSS and JS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="javascript/connect4.js"></script>
+    <script src="javascript/infobox.js"></script>
+    <script src="javascript/minmax.js"></script>
+    <script src="javascript/main.js"></script>
+    <title>Connect 4</title>
+  </head>
+  <body>
+    <h1><a href=".">Connect 4</a></h1>
+    <div class="playerSelection">
+      <h2>Choose Mode:</h2>
+      <button class="select-btn left">Player vs Player</button>
+      <button class="select-btn right">Player vs A.I.</button>
+    </div>
+    <div id="board"></div>
+    <div class="infobox-btn"></div>
+    <div id="infobox" class="box">
+      <h2>Playing: <span></span></h2>
+      <h2>Moves: <span></span></h2>
+      <h2>Cells: <span></span></h2>
+      <div class="dropdown">
+        <button class="dropbtn">Difficulty <i class="down-arrow"></i></button>
+        <div class="dropdown-content">
+          <div class="depth" depth="1">Easy</div>
+          <div class="depth" depth="2">2</div>
+          <div class="depth" depth="3">3</div>
+          <div class="depth" depth="4">4</div>
+          <div class="depth" depth="5">Medium</div>
+          <div class="depth" depth="6">6</div>
+          <div class="depth" depth="7">7</div>
+          <div class="depth" depth="8">8</div>
+          <div class="depth" depth="9">9</div>
+          <div class="depth" depth="10">Hard</div>
+        </div>
+      </div>
+      <button class="btn">Reset</button>
+    </div>
+    <div id="logbox" class="box">
+      <h2 class="hide">Played: <span></span></h2>
+      <h2 class="hide">Time: <span></span></h2>
+      <canvas id="myChart"></canvas>
+    </div>
+  </body>
+</html>

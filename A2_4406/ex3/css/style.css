@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+body {
+  background: linear-gradient(140deg, #213145, #a695b2);
+  padding-bottom: 300px;
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  background: -webkit-linear-gradient(180deg, #d0252a, #eaac8b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  height: 50px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+#board {
+  background-color: #355070;
+  display: inline-block;
+  border-radius: 2%;
+  padding: 10px;
+  box-shadow: 0px 0px 40px #1c2836;
+  margin-top: 20px;
+}
+
+.playerSelection {
+  position: absolute;
+  opacity: 0.7;
+  border-radius: 2%;
+  background-color: #1c2836;
+  height: 525px;
+  width: 580px;
+  top: -524px;
+  transition: top 2s;
+}
+
+.playerSelection h2 {
+  padding: 160px 0px 50px 0px;
+  font-family: "Press Start 2P", cursive;
+  background: -webkit-linear-gradient(180deg, #d0252a, #eaac8b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+}
+
+.select-btn {
+  width: 260px;
+  height: 50px;
+  border-radius: 35%;
+  background-color: #d0252a;
+  cursor: pointer;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  color: #eaac8b;
+  font-size: 15px;
+}
+
+.select-btn:hover {
+  cursor: pointer;
+  background-color: #eaac8b;
+  color: #d0252a;
+}
+
+.right {
+  margin-left: 18px;
+}
+
+.left {
+  margin-right: 18px;
+}
+
+.col {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  margin: 5px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 10px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.red {
+  background-color: #e56b6f;
+  opacity: 1;
+}
+
+.yellow {
+  background-color: #eaac8b;
+  opacity: 1;
+}
+
+.col[empty="true"] {
+  cursor: pointer;
+}
+
+.glow {
+  box-shadow: 0 0 4px 5px #fff;
+}
+
+.blink {
+  animation: blinkAnimation 2s linear infinite;
+}
+
+@keyframes blinkAnimation {
+  0% {
+    opacity: 40%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 40%;
+  }
+}
+
+.infobox-btn {
+  padding: 0;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  left: 10px;
+  background-image: url("../assets/default.png");
+  background-repeat: no-repeat;
+}
+
+.infobox-btn:hover {
+  cursor: pointer;
+  background-image: url("../assets/filled.png");
+}
+
+.infobox-btn:active {
+  background-image: url("../assets/pressed.png");
+}
+
+.box {
+  height: 500px;
+  width: 240px;
+  position: absolute;
+  background-color: black;
+  left: -240px;
+  top: 200px;
+  border-radius: 5%;
+  opacity: 0.7;
+  transition: left 2s;
+}
+
+.box h2 {
+  padding: 10px 0px 0px 10px;
+  font-family: "Press Start 2P", cursive;
+  background: -webkit-linear-gradient(180deg, #d0252a, #eaac8b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 14px;
+  text-align: left;
+}
+
+.btn {
+  position: absolute;
+  bottom: 10px;
+  left: 45px;
+  width: 155px;
+  height: 45px;
+  border-radius: 35%;
+  background-color: #d0252a;
+  cursor: pointer;
+  border: none;
+  font-family: "Press Start 2P", cursive;
+  color: #eaac8b;
+  font-size: 15px;
+}
+
+.btn:hover {
+  color: #d0252a;
+  background-color: #eaac8b;
+}
+
+.yellow-wins {
+  margin-top: 70px;
+}
+
+.draws {
+  margin-bottom: 70px;
+}
+
+.box .gameover {
+  font-size: 16px;
+}
+
+.down-arrow {
+  border: solid #eaac8b;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-bottom: 4px;
+}
+
+.dropbtn {
+  display: none;
+  background-color: #d0252a;
+  border: none;
+  border-radius: 35%;
+  width: 175px;
+  height: 45px;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  color: #eaac8b;
+  font-family: "Press Start 2P", cursive;
+}
+
+.dropbtn:hover {
+  cursor: pointer;
+  background-color: #eaac8b;
+  color: #d0252a;
+}
+
+.dropdown-content .depth {
+  display: none;
+  background-color: #d0252a;
+  color: #eaac8b;
+  text-decoration: none;
+  width: 80px;
+  height: 26px;
+  padding-top: 4px;
+  margin: auto;
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px;
+}
+
+.dropdown-content .depth:hover {
+  cursor: pointer;
+  background-color: #eaac8b;
+  color: #d0252a;
+}

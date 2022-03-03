@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+/* Colors */
+/***************************/
+:root {
+  --color-1: #000;
+  --color-2: #caebf2;
+  --color-3: #e6bf0f;
+  --color-4: #f6eba2;
+  --color-5: #804445;
+}
+/* Logo */
+/***************************/
+#logo {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, var(--color-3), var(--color-4));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+#logo h1 {
+  font-size: 6vw;
+}
+/* Navbar Items */
+/***************************/
+.navbar-custom .nav-item .nav-link {
+  font-size: 2.5vw;
+}
+.navbar-custom {
+  background-color: var(--color-1);
+}
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+  color: var(--color-3);
+}
+#navbar li {
+  overflow: hidden;
+}
+/* Media Querries */
+/***************************/
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  /* Nothing needed to be changed */
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+  #logo h1 {
+    font-size: 5vw;
+  }
+  .navbar-custom .nav-item .nav-link {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #logo h1 {
+    font-size: 3vw;
+  }
+  .navbar-custom .nav-item .nav-link {
+    font-size: 1.4vw;
+  }
+}

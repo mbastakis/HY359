@@ -1,0 +1,20 @@
+/* Footer */
+/***************************/
+footer {
+  width: 100%;
+}
+footer h6,
+footer h2 {
+  overflow: hidden;
+}
+.fa:hover {
+  opacity: 0.5;
+  padding: 6px;
+}
+/* Media Queries */
+/***************************/
+@media screen and (min-width: 1200px) {
+  footer {
+    margin-top: 10px;
+  }
+}
