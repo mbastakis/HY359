@@ -1,0 +1,3 @@
+		Name		|	AM	|		Email			|
+       Μιχαλης Μπαστακης	|  csd4406	|	csd4406@csd.uoc.gr	|
+        Λουκας Μερτζανης 	|  csd4457	|  	csd4457@csd.uoc.gr	|
