@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+
+* {
+    overflow-y: hidden;
+}
+
+.container,.user-info {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+label {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #71b9e6;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #9b59b6;
+}
+
+ /*Information section*/
+ .user-info {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+ }
+ 
+/* .setting {
+     width: 200px;
+     height: 40px;
+ }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
