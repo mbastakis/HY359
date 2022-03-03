@@ -1,0 +1,7 @@
+database\DB_Connection.class
+database\tables\EditBloodTestTable.class
+database\tables\EditMessageTable.class
+database\tables\EditDoctorTable.class
+database\tables\EditRandevouzTable.class
+database\tables\EditSimpleUserTable.class
+database\tables\EditTreatmentTable.class
