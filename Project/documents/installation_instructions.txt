@@ -1,0 +1,7 @@
+Import project to netbeans IDE, then build and run.
+Netbeans version: 12.4
+Tomcat version: 9.0.56
+Java version: JDK 1.8
+**You also need to setup XAMPP and mysql. You may import our database data provided in the hy359.sql file.
+
+King regards :)
